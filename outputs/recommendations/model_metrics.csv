@@ -1,0 +1,2 @@
+model,MAE,RMSE,R2,train_through_week,test_weeks
+regularized_log_demand,80.75,165.48,0.714,133,12
