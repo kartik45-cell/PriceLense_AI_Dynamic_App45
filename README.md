@@ -200,23 +200,3 @@ entirely on the bundled CSV/model artifacts using Streamlit, Pandas, NumPy, and
 Plotly. All file paths are relative (via `pathlib.Path`), so it works
 identically on Streamlit Cloud and locally.
 
-## Demo Instructions (30-second judge walkthrough)
-
-1. **Overview** — point out the business problem, the KPIs, and the R2 /
-   guardrail framing.
-2. **AI Recommendations** — filter to one center, select a high-revenue row,
-   show the recommendation card and "Why this price?" explanation.
-3. **Price Simulator** — move the proposed-price slider and narrate how
-   predicted demand and expected revenue update live, referencing the AI
-   recommended price on the chart.
-4. **Model Performance** — show R2 = 0.714 on a **time-based holdout**, and
-   explain why that's not the same as classification accuracy.
-5. **Methodology** — close on the pipeline diagram and the explicit
-   observational-data limitation and production roadmap.
-
-## Power BI (optional, legacy)
-
-`outputs/recommendations/pricing_recommendations.csv`, `meal_elasticity.csv`,
-and `model_metrics.csv` can also be loaded directly into Power BI. See
-`dashboard/README.md` for a prior static-HTML prototype and layout notes; the
-Streamlit app in `app.py` supersedes it as the primary demo experience.
